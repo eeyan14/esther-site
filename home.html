@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>EstherSite</title>
+    <base href="C:/Users/eeyan/Documents/Git/esther-site/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- Page-specific CSS -->
+    <!-- there are so many because this was ported over from an angular project :( -->
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="./experience.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <header>
+    <div class="es-header-wrapper">
+      <div class="es-header-name">
+        ESTHER YAN
+        <a href="./home.html">
+          <span class="es-header-link"></span>
+        </a>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="./home.html">Home</a>
+            <a class="nav-item nav-link" href="./home.html#about">About</a>
+            <a class="nav-item nav-link" href="./home.html#experience">Experience</a>
+            <a class="nav-item nav-link" href="./home.html#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </div> 
+
+    <div class="container-fluid" id="content">
+      <div class="row">
+        <div class="col-xs-1 col-sm-1 col-md-2 col-lg-3 col-xl-3"></div>
+        <div class="col-xs-10 col-sm-10 col-md-8 col-lg-6 col-xl-6 es-header-profile-image">
+          <img src="./assets/img/profile-img.jpg" class="rounded-circle img-fluid mx-auto d-block" alt="profile image" id="profile-img">
+        </div>
+        <div class="col-xs-1 col-sm-1 col-md-2 col-lg-3 col-xl-3"></div>
+      </div>
+    </div> 
+  </header>
+
+  <body>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> 
+    <!-- Site-specific JS -->
+    <script src="./app.js"></script>
+
+    <!-- START ABOUT -->
+    <div class="es-app-wrapper">
+      <div class="es-app-title">
+        <a name="about">ABOUT</a>
+      </div>
+
+      <div class="es-about-intro-text">
+        Hi, my name is Esther! This is a little bit about me that you won't find in my resumé, and about the experiences that have shaped me into the person I am today.
+        <br/><br/>
+        I am an engineer. Computer engineering, specifically, at the University of Michigan, where I got my Bachelor's and am now in their Master's program pursuing a degree in Electrical & Comptuer Engineering with a focus on Embedded Systems. I didn't know I wanted to be an engineer for a long time - I was terrible at math and didn't like science until junior year of high school, so it was a surprise to everyone (even me) when I applied into the engineering program at Michigan. But I fell in love with programming in my first semester, and then fell in love with logic - in hardware description languages, in state diagrams, and in programming FPGAs and microprocessors - and I've never really looked back since.
+        <br/><br/>
+        It also helped that I (finally) figured out how calculus worked.
+        <br/><br/>
+        But outside of that, I have always been an avid musician. I started piano lessons when I was 5, picked up violin and flute along the way, and now mostly play guitar and sing. In some ways, it <a href="http://www.ams.org/publicoutreach/math-and-music">makes sense</a> that I ended up an <a href="http://www.ams.org/publicoutreach/math-and-music">engineer</a>. Music is what keeps me (mostly) sane through school, it strikes a balance between precision and flexibility, and it exercises the creative side of my brain that, between staring at compile errors for hours on end and trying to understand anything involving statistics, doesn't often get used.
+      </div>
+      <div class="es-about-greenies d-flex flex-column justify-content-center align-items-center">
+        <div class="es-about-greenies-overlay"></div>
+
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/lqjlUcJhTjI?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen class="es-about-video"></iframe>
+
+          <div class="es-about-greenies-text">
+            I had the privilege of being a part of 58 Greene A Cappella for four years, including serving as Communications Chair my third year and Director in my fourth. 58 Greene was the defining experience of my time at Michigan - I spent at least 6 hours a week in rehearsals, more time outside of that arranging music, and as director, the rest of my free time (and then some) figuring out how to lead a group. I learned how to take charge and when to step back and allow the dynamics of the group shape the creative process; I learned how to manage people, time, and efforts; and I learned how to work through what seemed like a disaster to put on what people said was the best Greenie concert they've ever been to.
+            <br/><br/>
+            I also learned a lot about music - both how to use my voice and how to take something that exists (like a song) and create something unique out of it. The video above is Senior Song, which is traditionally arranged and sung by seniors at the last concert of the year as a surprise for everyone else. I had the privilege of co-arranging it with our Musical Director; the arrangement is, in a way, a culmination of my time with Greenies.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END ABOUT -->
+
+    <!-- START EXPERIENCE -->
+    <div class="es-app-wrapper">
+      <div class="es-app-title">
+        <a name="experience">EXPERIENCE</a>
+      </div>
+
+      <!-- selection buttons -->
+      <div class="row d-flex flex-row justify-content-center align-items-center es-experience-button-row">
+        <!-- <div class="col-6 col-sm-12 col-md-5 mx-4 es-experience-button" (click)="toggleJobs()"> -->
+        <div class="col-6 col-sm-12 col-md-5 mx-4 es-experience-button">
+          Job Experience
+        </div>
+        <!-- <div class="col-6 col-sm-12 col-md-5 mx-4 es-experience-button" (click)="toggleProjects()"> -->
+        <div class="col-6 col-sm-12 col-md-5 mx-4 es-experience-button">
+          Project Experience
+        </div>
+      </div>
+    </div>
+    <!-- END EXPERIENCE -->
+
+    <!-- START CONTACT -->
+    <div class="es-app-wrapper">
+      <div class="es-app-title">
+        <a name="contact">CONTACT</a>
+      </div>
+
+      <div class="es-contact-button d-flex flex-row justify-content-center">
+        <a class="btn btn-light" href="https://www.linkedin.com/in/esther-yan/" role="button">LinkedIn</a>
+      </div>
+    </div>
+    <!-- END CONTACT -->
+
+  </body>
+</html>
