@@ -97,36 +97,179 @@
     <!-- END ABOUT -->
 
     <!-- START EXPERIENCE -->
-    <div class="es-app-wrapper">
-      <div class="es-app-title">
-        <a name="experience">EXPERIENCE</a>
-      </div>
-
-      <!-- selection buttons -->
-      <div class="row d-flex flex-row justify-content-center align-items-center es-experience-button-row">
-        <!-- <div class="col-6 col-sm-12 col-md-5 mx-4 es-experience-button" (click)="toggleJobs()"> -->
-        <div class="col-6 col-sm-12 col-md-5 mx-4 es-experience-button">
-          Job Experience
-        </div>
-        <!-- <div class="col-6 col-sm-12 col-md-5 mx-4 es-experience-button" (click)="toggleProjects()"> -->
-        <div class="col-6 col-sm-12 col-md-5 mx-4 es-experience-button">
-          Project Experience
-        </div>
-      </div>
-    </div>
+    work in progress
     <!-- END EXPERIENCE -->
 
     <!-- START CONTACT -->
-    <div class="es-app-wrapper">
-      <div class="es-app-title">
-        <a name="contact">CONTACT</a>
-      </div>
-
-      <div class="es-contact-button d-flex flex-row justify-content-center">
-        <a class="btn btn-light" href="https://www.linkedin.com/in/esther-yan/" role="button">LinkedIn</a>
-      </div>
-    </div>
+    work in progress
     <!-- END CONTACT -->
 
   </body>
+
+<style>
+  /*** HEADER STYLES ***/
+  .es-header-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: "Georgia";
+  }
+
+  .es-header-name {
+    position: relative;
+    font-size: 70px;
+    letter-spacing: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .es-header-link {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .container-fluid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    align-content: center;
+    text-align: center;
+    padding: 0px 10px;
+    border-radius: 50px;
+  }
+
+  .navbar-nav > a {
+    font-size: 18px;
+    letter-spacing: 3px;
+    padding: 0px 30px;
+    margin: 0px 30px;
+  }
+
+  .navbar-toggler {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+  .es-header-profile-image {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    max-height: 60%;
+  }
+
+  @media (min-width: 720px) {
+    .es-header-profile-image {
+      padding: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 45%;
+      max-height: 45%;
+    }
+  }
+
+  @media (min-width: 960px) {
+    .es-header-profile-image {
+      padding: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 35%;
+      max-height: 35%;
+    }
+  }
+
+
+  /*** ABOUT STYLES ***/
+  .es-about-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
+    font-family: "Georgia";
+  }
+
+  .es-about-title {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    justify-content: center;
+    font-size: 44px;
+    padding-top: 50px;
+  }
+
+  .es-about-intro {
+    padding: 0px 0px 20px 0px;
+  }
+
+  .es-about-intro-text {
+    padding: 20px 60px 60px 60px;
+    text-align: justify;
+  }
+
+  .es-about-greenies {
+    margin: 0px;
+    padding: 20px 40px;
+    overflow-x: hidden; 
+    position: relative;
+    width: 100vw;
+    min-height: 500px;
+    background: url("./assets/img/greenies-bow.jpg") no-repeat fixed center top / cover;
+  }
+
+  @media (min-width: 1200px) {
+    .es-about-greenies {
+      padding: 20px 10px 20px 40px;
+    }
+  }
+
+  @media (min-width: 1300) {
+    .es-about-greenies {
+      padding: 20px 15px 20px 40px;
+    }
+  }
+
+  .es-about-greenies-overlay {
+    padding: none;
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+
+  .es-about-greenies-text {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 25px;
+    color: white;
+    text-align: justify;
+  }
+
+  .es-about-greenies-logo {
+    max-height: 400px;
+    width: auto;
+  }
+
+  .es-about-video {
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+  }
+</style>
+
 </html>
