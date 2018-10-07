@@ -189,7 +189,7 @@ div {
 /*** EXPERIENCE STYLES ***/
 .es-experience-container {
   font-family: "Georgia";
-  background-color: #f8f9fa;
+  background-color: rgba(248,249,250,1);
   justify-content: center;
   text-align: center;
   padding: 20px;
@@ -197,7 +197,7 @@ div {
 }
 
 .es-experience-detail-img {
-  border: 3px solid #000000;
+  border: 3px solid rgba(0,0,0,1);
   max-width: 190px;
   max-height: auto;
 }
