@@ -177,7 +177,7 @@ div {
 }
 
 .es-about-video iframe {
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   top: 0;
   left: 0;
@@ -187,6 +187,42 @@ div {
 
 
 /*** EXPERIENCE STYLES ***/
+.es-experience-collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  margin: 50px;
+  width: auto;
+  border: none;
+  text-align: left;
+  outline: none;
+  /*font-size: 15px;*/
+}
+
+.active, .es-experience-collapsible:hover {
+  background-color: #555;
+}
+
+.es-experience-collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.es-experience-collapsible-content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 .es-experience-container {
   font-family: "Georgia";
   background-color: rgba(248,249,250,1);
