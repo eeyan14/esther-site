@@ -168,21 +168,57 @@ div {
 }
 
 .es-about-video {
-  /*margin-bottom: 100px;*/
-  /*padding-bottom: 20px;*/
   z-index: 2;
   position: relative;
+  margin-bottom: 100px;
   padding-bottom: 56.25%; /* 16:9 */
   padding-top: 25px;
   height: 0;
 }
 
 .es-about-video iframe {
+  z-index: 2;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+
+/*** EXPERIENCE STYLES ***/
+.es-experience-container {
+  font-family: "Georgia";
+  background-color: #f8f9fa;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin: 0px 50px;
+}
+
+.es-experience-detail-img {
+  border: 3px solid #000000;
+  max-width: 190px;
+  max-height: auto;
+}
+
+.es-experience-detail-text {
+  text-align: left;
+}
+
+.es-experience-detail-text-header {
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .es-experience-detail-text-header {
+    text-align: center;
+  }
+}
+
+.es-experience-detail-text-position {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 
