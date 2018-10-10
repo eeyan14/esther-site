@@ -135,7 +135,7 @@ div {
 }
 
 .es-about-greenies {
-  margin: 0px 15px;
+  margin: 0px;
   padding: 20px 40px;
   overflow-x: hidden; 
   position: relative;
@@ -162,6 +162,7 @@ div {
 .es-about-greenies-text {
   background: rgba(0, 0, 0, 0.6);
   padding: 20px 60px;
+  margin: 0px 15px;
   color: white;
   text-align: justify;
   z-index: 2;
