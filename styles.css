@@ -173,7 +173,7 @@ div {
   padding-bottom: 56.25%; /* 16:9 */
   padding-top: 25px;
   /*height: 0;*/
-  z-index: 2;
+  z-index: 3;
 }
 
 /*.es-about-video iframe {
@@ -192,7 +192,7 @@ div {
   color: white;
   cursor: pointer;
   padding: 20px;
-  margin: 50px;
+  margin: 10px 50px;
   width: auto;
   border: none;
   text-align: left;
@@ -228,7 +228,7 @@ div {
   background-color: rgba(248,249,250,1);
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  /*padding: 20px;*/
   margin: 0px 50px;
 }
 

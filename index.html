@@ -251,6 +251,64 @@
           </div>
         </div>
       </div>
+
+      <button class="es-experience-collapsible">Projects</button>
+      <div class="es-experience-collapsible-content">
+        <!-- EECS 473 -->
+        <div class="jumbotron-fluid">
+          <div class="es-experience-container">
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-3">
+                <img src="assets/img/metronome-render.png" class="es-experience-met-img img-fluid mx-auto d-block">
+              </div>
+              <div class="col-sm-12 col-md-8 col-lg-9 es-experience-detail-text">
+                <div class="es-experience-detail-text-header">
+                  <span class="es-experience-detail-text-position">Metronome</span>
+                  <br/>
+                  EECS 473: Advanced Embedded Systems
+                  <br/>
+                  Fall 2017
+                </div>
+                <hr/>
+                My senior design project was an embedded systems course. The requirements for the project were fairly open ended - utilize the topics in the course, and create something that has real-world value. My senior design team had five people, and we chose to build a "high-tech" metronome that used FreeRTOS (so it had incredibly good timing accuracy), could visualize up to 21 different subdivisions and set different tones for each subdivision, could overlay two different count patterns (e.g. 5 beats per measure + 8 beats per measure), and had a custom-designed PCB to support buttons, an LCD screen, a speaker, a headphone jack, and a battery.
+                <br/><br/>
+                My main contributions were in developing the firmware and user interface for the display. This involved writing the code that would draw images onto the screen (and double buffering for smooth graphics!) and designing the logic for what would display based on user inputs. We used the  STM32F74 microcontroller, which provided some APIs and was useful for the setup and use of the full-color LCD screen that we had chosen. 
+                <br/><br/>
+                Our professor, in the comments on our final project, said, "The project was one of the most complex designs ever in the course. The board was complex with a dense processor and you all did everything 'the right way'."
+                <br/><br/>
+                <a href="assets/pdf/eecs473-poster.pdf" target="_blank">Click here to view our presentation from the Engineering Design Expo.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- EECS 373 -->
+        <div class="jumbotron-fluid">
+          <div class="es-experience-container">
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-3">
+                <img src="assets/img/rob-arm-1.jpg" class="es-experience-rob-arm-img img-fluid mx-auto d-block">         
+              </div>
+              <div class="col-sm-12 col-md-8 col-lg-9 es-experience-detail-text">
+                <div class="es-experience-detail-text-header">
+                  <span class="es-experience-detail-text-position">Mobile Robotic Arm</span>
+                  <br/>
+                  EECS 373: Intro to Embedded Systems
+                  <br/>
+                  Fall 2016
+                </div>
+                <hr/>
+                This was the first "real" embedded systems project that I had ever done. I worked on a team with two others, and looking back, we probably bit off more than we could chew - but we had a lot of fun doing it! 
+                <br/><br/>
+                We built a robotic arm + claw that could be raised, lowered, opened, and closed by using a flex sensor attached to a glove. The arm itself was mounted on a mobile base that could be controlled with an XBox controller. Both the glove and the controller had XBee modules that sent signals to the arm. The code was written mainly in Verilog for the Actel SmartFusion microcontroller.
+                <br/><br/>
+                <img src="assets/img/rob-arm-2.jpg" class="img-fluid mx-auto d-block" style="max-width:350px">
+                <br/><br/>
+                <a href="assets/pdf/eecs373-poster.pdf" target="_blank">Click here to view our presentation from the EECS 373 Design Expo.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- END EXPERIENCE -->
 
