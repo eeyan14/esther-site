@@ -167,10 +167,10 @@ div {
   z-index: 2;
 }
 
-/*.es-about-video {
+.es-about-video {
   position: relative;
   margin-bottom: 100px;
-  padding-bottom: 56.25%; /* 16:9 * /
+  padding-bottom: 56.25%; /* 16:9 */
   padding-top: 25px;
   height: 0;
   z-index: 2;
@@ -183,7 +183,7 @@ div {
   width: 100%;
   height: 100%;
   z-index: 3;
-}*/
+}
 
 
 /*** EXPERIENCE STYLES ***/
