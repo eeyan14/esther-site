@@ -42,7 +42,7 @@ body {
 }
 
 h1, h2, h3, .text-intro-wrap .text-intro h2, h4 {
-  margin: 1.414em 0 0.5em;
+  margin: 1.414em 0 0 0;
   font-weight: 900;
   line-height: 1.2;
   font-family: "Zilla Slab", serif;
@@ -541,7 +541,7 @@ a:hover, a:focus, a:active {
   margin-bottom: 30px;
 }
 
-.probootstrap-groom-bride {
+.probootstrap-about {
   display: table;
   margin-top: -160px;
   position: relative;
@@ -549,17 +549,17 @@ a:hover, a:focus, a:active {
 }
 
 @media screen and (max-width: 768px) {
-  .probootstrap-groom-bride {
+  .probootstrap-about {
     margin-top: 0;
   }
 }
 
-.probootstrap-groom-bride .probootstrap-groom, .probootstrap-groom-bride .probootstrap-bride, .probootstrap-groom-bride .probootstrap-divider {
+.probootstrap-about .probootstrap-headshot, .probootstrap-about .probootstrap-divider {
   display: table-cell;
   vertical-align: top;
 }
 
-.probootstrap-groom-bride .probootstrap-groom img, .probootstrap-groom-bride .probootstrap-bride img, .probootstrap-groom-bride .probootstrap-divider img {
+.probootstrap-about .probootstrap-headshot img, .probootstrap-about .probootstrap-divider img {
   border-radius: 50%;
   border: 10px solid #ffffff;
   width: 70%;
@@ -568,7 +568,7 @@ a:hover, a:focus, a:active {
   margin-right: auto;
 }
 
-.probootstrap-groom-bride .probootstrap-caption {
+.probootstrap-about .probootstrap-caption {
   color: rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   text-align: center;
@@ -579,52 +579,52 @@ a:hover, a:focus, a:active {
   letter-spacing: .1em;
 }
 
-.probootstrap-groom-bride h2 {
+.probootstrap-about h2 {
   margin-top: 0;
 }
 
-.probootstrap-groom-bride .probootstrap-groom, .probootstrap-groom-bride .probootstrap-bride {
+.probootstrap-about .probootstrap-headshot {
   padding: 30px;
 }
 
 @media screen and (max-width: 992px) {
-  .probootstrap-groom-bride .probootstrap-groom, .probootstrap-groom-bride .probootstrap-bride {
+  .probootstrap-about .probootstrap-headshot {
     padding: 0;
   }
 }
 
-.probootstrap-groom-bride .probootstrap-groom, .probootstrap-groom-bride .probootstrap-bride {
+.probootstrap-about .probootstrap-headshot {
   width: 45%;
 }
 
 @media screen and (max-width: 768px) {
-  .probootstrap-groom-bride .probootstrap-groom, .probootstrap-groom-bride .probootstrap-bride {
+  .probootstrap-about .probootstrap-headshot {
     width: 100%;
     display: block;
   }
 }
 
-.probootstrap-groom-bride .probootstrap-divider {
+.probootstrap-about .probootstrap-divider {
   width: 10%;
   font-size: 100px;
   text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-  .probootstrap-groom-bride .probootstrap-divider {
+  .probootstrap-about .probootstrap-divider {
     width: 100%;
     display: block;
   }
 }
 
-.probootstrap-groom-bride .probootstrap-divider span {
+.probootstrap-about .probootstrap-divider span {
   display: block;
   margin-top: 210px;
   color: #7C9078;
 }
 
 @media screen and (max-width: 768px) {
-  .probootstrap-groom-bride .probootstrap-divider span {
+  .probootstrap-about .probootstrap-divider span {
     margin-top: 0;
   }
 }
@@ -942,7 +942,7 @@ a:hover, a:focus, a:active {
   resize: vertical;
 }
 
-.btn-register img {
+.btn-contact img {
   position: relative;
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
@@ -951,7 +951,7 @@ a:hover, a:focus, a:active {
   top: 0px;
 }
 
-.btn-register:hover img, .btn-register:focus img {
+.btn-contact:hover img, .btn-contact:focus img {
   opacity: .7;
   -webkit-transform: scale(1);
   transform: scale(1);
@@ -961,55 +961,6 @@ a:hover, a:focus, a:active {
 .probootstrap-animate {
   opacity: 0;
   visibility: hidden;
-}
-
-.probootstrap-testimony-wrap {
-  border-radius: 4px;
-  padding: 20px;
-}
-
-.probootstrap-testimony-wrap figure {
-  margin-bottom: 20px;
-}
-
-.probootstrap-testimony-wrap figure img {
-  height: 80px;
-  width: 80px !important;
-  margin: 0 auto;
-  border-radius: 50%;
-}
-
-.probootstrap-testimony-wrap blockquote {
-  border-left: none;
-  padding: 0;
-  margin-bottom: 0;
-  color: #000000;
-}
-
-.probootstrap-testimony-wrap blockquote cite {
-  margin-top: 30px;
-  display: block;
-  font-size: 14px;
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.probootstrap-testimony-wrap blockquote cite span {
-  font-style: normal;
-  color: #000000;
-  font-weight: bold;
-}
-
-.owl-carousel-testimony .item {
-  padding-bottom: 40px;
-  padding-top: 20px;
-}
-
-.owl-carousel-testimony .probootstrap-testimony-wrap {
-  border: 1px solid #f2f2f2;
-  max-width: 700px;
-  margin: 0 auto;
-  -webkit-box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.09);
-  box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.09);
 }
 
 /* Flexslider override style */
@@ -1065,7 +1016,6 @@ a:hover, a:focus, a:active {
   font-family: "Zilla Slab", serif;
   font-size: 26pt;
   font-weight: bold;
-  margin-top: 10px;
   margin-bottom: 30px;
 }
 
@@ -1085,14 +1035,33 @@ a:hover, a:focus, a:active {
   font-size: 11pt;
 }
 
+.es-experience-detail-text-bullet {
+  text-align: left;
+  font-size: 11pt;
+  margin-right: 10px;
+}
+
 .es-experience-detail-text-header {
   text-align: left;
   font-size: 14px;
 }
 
-@media (max-width: 767px) {
+.es-experience-img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
   .es-experience-detail-text-header {
     text-align: center;
+  }
+
+  .es-experience-detail-text {
+    margin: 5px 15px 0px 15px;
+  }
+
+  .es-experience-img {
+    width: 30%;
+    margin-bottom: 10px;
   }
 }
 
@@ -1100,6 +1069,7 @@ a:hover, a:focus, a:active {
   font-weight: bold;
   font-size: 20px;
 }
+
 
 .probootstrap-section.probootstrap-section-colored-darker p, .ey-registry-experiences-description p {
   color: white;
