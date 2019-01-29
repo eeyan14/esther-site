@@ -562,6 +562,10 @@ a:hover, a:focus, a:active {
 .probootstrap-groom-bride .probootstrap-groom img, .probootstrap-groom-bride .probootstrap-bride img, .probootstrap-groom-bride .probootstrap-divider img {
   border-radius: 50%;
   border: 10px solid #ffffff;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .probootstrap-groom-bride .probootstrap-caption {
