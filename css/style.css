@@ -46,7 +46,7 @@ h1, h2, h3, .text-intro-wrap .text-intro h2, h4 {
   font-weight: 900;
   line-height: 1.2;
   font-family: "Zilla Slab", serif;
-  color: #7C9078;
+  color: #800020;
 }
 
 h1 {
@@ -77,7 +77,7 @@ p, ul, ol {
 a {
   -webkit-transition: .3s all;
   transition: .3s all;
-  color: #7C9078;
+  color: #800020;
 }
 
 a:hover, a:focus, a:active {
@@ -235,12 +235,12 @@ a:hover, a:focus, a:active {
 .probootstrap-navbar .dropdown > .dropdown-menu > li a:hover {
   border-top: none;
   background: #ffffff;
-  color: #7C9078;
+  color: #85C8DD;
 }
 
 .probootstrap-navbar .dropdown > .dropdown-menu > li.open > a, .probootstrap-navbar .dropdown > .dropdown-menu > li:hover > a, .probootstrap-navbar .dropdown > .dropdown-menu > li:focus > a, .probootstrap-navbar .dropdown > .dropdown-menu > li:active > a {
   border-top: none;
-  color: #7C9078;
+  color: #85C8DD;
   background: #ffffff;
 }
 
@@ -264,7 +264,7 @@ a:hover, a:focus, a:active {
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: #7C9078;
+  background: #85C8DD;
   border-radius: 0;
   -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
@@ -393,7 +393,7 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-navbar .navbar-nav.active > a {
-  color: #7C9078 !important;
+  color: #800020 !important;
 }
 
 .probootstrap-navbar .dropdown-submenu {
@@ -489,12 +489,12 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-navbar.scrolled .navbar-nav > li.active > a {
-  color: #7C9078 !important;
+  color: #800020 !important;
 }
 
 @media screen and (max-width: 768px) {
   .probootstrap-navbar.scrolled .navbar-nav > li.active > a {
-    color: #7C9078 !important;
+    color: #800020 !important;
   }
 }
 
@@ -616,7 +616,7 @@ a:hover, a:focus, a:active {
 .probootstrap-groom-bride .probootstrap-divider span {
   display: block;
   margin-top: 210px;
-  color: #7C9078;
+  color: #800020;
 }
 
 @media screen and (max-width: 768px) {
@@ -720,8 +720,8 @@ a:hover, a:focus, a:active {
 }
 
 .btn.btn-primary {
-  border: 1px solid #7C9078;
-  background: #7C9078;
+  border: 1px solid #800020;
+  background: #800020;
   color: #ffffff;
 }
 
@@ -731,25 +731,25 @@ a:hover, a:focus, a:active {
 
 .btn.btn-primary:focus, .btn.btn-primary:active {
   outline: none;
-  border: 1px solid #7C9078;
+  border: 1px solid #800020;
 }
 
 .btn.btn-ghost {
   background: transparent;
-  border: 1px solid #7C9078;
-  color: #7C9078;
+  border: 1px solid #800020;
+  color: #800020;
 }
 
 .btn.btn-ghost:hover {
-  background: #7C9078;
+  background: #800020;
   color: #ffffff;
 }
 
 .btn.btn-ghost:focus, .btn.btn-ghost:active {
   outline: none;
   background: transparent;
-  color: #7C9078;
-  border: 1px solid #7C9078;
+  color: #800020;
+  border: 1px solid #800020;
 }
 
 .probootstrap-section {
@@ -783,7 +783,7 @@ a:hover, a:focus, a:active {
 .probootstrap-section.probootstrap-section-colored, .probootstrap-section.probootstrap-section-colored-darker {
   justify-content: center;
   align-items: center;
-  background: #9BB597;
+  background: #800020;
   color: #ffffff;
 }
 
@@ -812,11 +812,11 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-section.probootstrap-section-colored-darker {
-  background: #9BB597;
+  background: #b75656;
 }
 
 .probootstrap-footer {
-  background: #9BB597;
+  background: #800020;
   padding: 70px 0;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -866,7 +866,7 @@ a:hover, a:focus, a:active {
 }
 
 .probootstrap-card {
-  border: 2px solid #7C9078;
+  border: 2px solid #800020;
   background: #ffffff;
   padding: 40px;
   color: #000000 !important;
@@ -904,7 +904,7 @@ a:hover, a:focus, a:active {
 .probootstrap-form .form-control:active, .probootstrap-form .form-control:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: 2px solid #7C9078;
+  border: 2px solid #800020;
 }
 
 .probootstrap-form .form-group:last-child {
@@ -1010,12 +1010,12 @@ a:hover, a:focus, a:active {
 
 /* Flexslider override style */
 .slider-height, .flexslider, .flexslider .slides > li {
-  height: 60vh;
+  height: 100vh;
 }
 
 .probootstrap-heading .primary-heading {
   font-family: "Zilla Slab", serif;
-  color: #7C9078;
+  color: #800020;
   margin: 0;
   padding: 0;
   font-size: 80px;
@@ -1057,44 +1057,22 @@ a:hover, a:focus, a:active {
   font-weight: 300;
 }
 
-.ey-experiences-summary {
-  font-family: "Zilla Slab", serif;
-  font-size: 26pt;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 30px;
+.ey-registry-experiences-heading {
+  margin-top: 40px;
 }
 
-.ey-experiences-summary:hover {
+.ey-registry-experiences-summary {
+  font-family: "Zilla Slab", serif;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.ey-registry-experiences-summary:hover {
   cursor: pointer;
 }
 
-.es-experience-detail-img {
-  border: 3px solid rgba(0,0,0,1);
-  border-radius: 50%;
-  max-width: 190px;
-  max-height: auto;
-}
-
-.es-experience-detail-text {
-  text-align: left;
-  font-size: 11pt;
-}
-
-.es-experience-detail-text-header {
-  text-align: left;
-  font-size: 14px;
-}
-
-@media (max-width: 767px) {
-  .es-experience-detail-text-header {
-    text-align: center;
-  }
-}
-
-.es-experience-detail-text-position {
-  font-weight: bold;
-  font-size: 20px;
+.ey-registry-experiences-list-done {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .probootstrap-section.probootstrap-section-colored-darker p, .ey-registry-experiences-description p {
@@ -1108,7 +1086,7 @@ a:hover, a:focus, a:active {
   background: none;
   border: none;
   margin: 0 0 0;
-  background: #9BB597;
+  background: #800020;
 }
 
 .flexslider .probootstrap-slider-text {
@@ -1342,14 +1320,14 @@ a:hover, a:focus, a:active {
 
 .owl-theme .owl-controls .owl-nav [class*="owl-"] i {
   font-size: 24px;
-  background: #7C9078 !important;
+  background: #800020 !important;
   padding: 12px;
   -webkit-transition: .5s all;
   transition: .5s all;
 }
 
 .owl-theme .owl-controls .owl-nav [class*="owl-"]:hover i, .owl-theme .owl-controls .owl-nav [class*="owl-"]:focus i {
-  background: #7C9078 !important;
+  background: #800020 !important;
 }
 
 .owl-theme .owl-dots {

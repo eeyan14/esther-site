@@ -1,113 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
-    <title>Esther Yan</title>
-    <base href="https://eeyan14.github.io/">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+    <title>Esther Yan</title>
 
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <!-- Page-specific CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Alice|Zilla+Slab:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="styles-merged.css">
     <link rel="stylesheet" href="styles.css">
   </head>
-
-  <header>
-    <div class="es-header-wrapper">
-      <div class="es-header-name">
-        ESTHER YAN
-        <a href="">
-          <span class="es-header-link"></span>
-        </a>
-      </div>
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="">Home</a>
-            <a class="nav-item nav-link" href="#about">About</a>
-            <a class="nav-item nav-link" href="#experience">Experience</a>
-            <a class="nav-item nav-link" href="#contact">Contact</a>
-          </div>
-        </div>
-      </nav>
-    </div> 
-
-    <div class="container-fluid" id="content">
-      <div class="row">
-        <div class="col-xs-1 col-sm-1 col-md-2 col-lg-3 col-xl-3"></div>
-        <div class="col-xs-10 col-sm-10 col-md-8 col-lg-6 col-xl-6 es-header-profile-image">
-          <img src="assets/img/profile-img.jpg" class="rounded-circle img-fluid mx-auto d-block" alt="profile image" id="profile-img">
-        </div>
-        <div class="col-xs-1 col-sm-1 col-md-2 col-lg-3 col-xl-3"></div>
-      </div>
-    </div> 
-  </header>
-
   <body>
-    <!-- jQuery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> 
 
-    <!-- START ABOUT -->
-    <div class="es-app-wrapper">
-      <div class="es-app-title">
-        <a name="about">ABOUT</a>
+    <!-- Fixed navbar -->
+     <!-- navbar-fixed-top -->
+    <nav class="navbar navbar-default probootstrap-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" title="left-home-icon">
+            <img src="assets/img/initials.png" class="img-responsive">
+          </a>
+        </div>
+
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#" data-nav-section="home">Home</a></li>
+            <li><a href="#" data-nav-section="about">About</a></li>
+            <li><a href="#" data-nav-section="experience">Experience</a></li>
+            <li><a href="#" data-nav-section="contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <div class="es-about-intro-text">
-        Hi, my name is Esther! This is a little bit about me that you won't find in my resumé, and about the experiences that have shaped me into the person I am today.
-        <br/><br/>
-        I am an engineer. Computer engineering, specifically, at the University of Michigan, where I got my Bachelor's and am now in their Master's program pursuing a degree in Electrical & Comptuer Engineering with a focus on Embedded Systems. I didn't know I wanted to be an engineer for a long time - I was terrible at math and didn't like science until junior year of high school, so it was a surprise to everyone (even me) when I applied into the engineering program at Michigan. But I fell in love with programming in my first semester, and then fell in love with logic - in hardware description languages, in state diagrams, and in programming FPGAs and microprocessors - and I've never really looked back since.
-        <br/><br/>
-        It also helped that I (finally) figured out how calculus worked.
-        <br/><br/>
-        But outside of that, I have always been an avid musician. I started piano lessons when I was 5, picked up violin and flute along the way, and now mostly play guitar and sing. In some ways, it <a href="http://www.ams.org/publicoutreach/math-and-music">makes sense</a> that I ended up an <a href="http://www.ams.org/publicoutreach/math-and-music">engineer</a>. Music is what keeps me (mostly) sane through school, it strikes a balance between precision and flexibility, and it exercises the creative side of my brain that, between staring at compile errors for hours on end and trying to understand anything involving statistics, doesn't often get used.
-      </div>
-      <div class="es-about-greenies d-flex flex-column justify-content-center align-items-center">
-        <div class="es-about-greenies-overlay"></div>
-
-        <div class="d-flex flex-column justify-content-center align-items-center">
-          <!-- <div class="es-about-video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lqjlUcJhTjI?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-          </div> -->
-          <iframe width="560" height="349" src="https://www.youtube.com/embed/lqjlUcJhTjI?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen style="z-index:2; padding-bottom:50px"></iframe>
-
-          <div class="es-about-greenies-text">
-            I had the privilege of being a part of 58 Greene A Cappella for four years, including serving as Communications Chair my third year and Director in my fourth. 58 Greene was the defining experience of my time at Michigan - I spent at least 6 hours a week in rehearsals, more time outside of that arranging music, and as director, the rest of my free time (and then some) figuring out how to lead a group. I learned how to take charge and when to step back and allow the dynamics of the group shape the creative process; I learned how to manage people, time, and efforts; and I learned how to work through what seemed like a disaster to put on what people said was the best Greenie concert they've ever been to.
-            <br/><br/>
-            I also learned a lot about music - both how to use my voice and how to take something that exists (like a song) and create something unique out of it. The video above is Senior Song, which is traditionally arranged and sung by seniors at the last concert of the year as a surprise for everyone else. I had the privilege of co-arranging it with our Musical Director; the arrangement is, in a way, a culmination of my time with Greenies.
+    <section class="flexslider" data-section="home">
+      <div class="container text-intro-wrap">
+        <div class="row">
+          <div class="col-md-12 text-center text-intro probootstrap-animate">
+            <h1>Esther Yan</h1>
           </div>
         </div>
       </div>
-    </div>
-    <!-- END ABOUT -->
+    </section>
 
-    <!-- START EXPERIENCE -->
-    <div class="es-app-wrapper">
-      <div class="es-app-title">
-        <a name="experience">EXPERIENCE</a>
+    <section class="probootstrap-section probootstrap-bg" data-section="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-2"></div>
+          <div class="col-md-6 col-sm-6 col-xs-8 probootstrap-groom-bride">
+            <div class="probootstrap-groom probootstrap-animate">
+              <figure>
+                <img src="assets/img/profile-img.jpg" class="img-responsive">
+              </figure>
+              <h2 class="text-center">About</h2>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-2"></div>
+        </div>
+        <p class="probootstrap-animate">
+          I am a computer engineer with a love for exploring the space between people and technology. I believe technology is a unique conduit for meeting people's needs, and that I offer a unique perspective in how technology can be shaped to meet those needs.
+        </p>
       </div>
+    </section>
 
-      <button class="es-experience-collapsible">Jobs</button>
-      <div class="es-experience-collapsible-content">
-        <!-- northrop grumman -->
-        <div class="jumbotron-fluid">
-          <div class="es-experience-container">
-            <div class="row es-experience-detail-container">
+    <div class="probootstrap-section probootstrap-section-colored justify-content-center align-items-center" data-section="experience">
+      <div class="container">
+        <div class="row mb40 text-center flex-column">
+          <div class="col-md-12 probootstrap-animate"><h2 class="mt0">Experience</h2></div>
+        </div>
+        <div class="row">
+          <details class="probootstrap-animate">
+            <summary class="ey-experiences-summary">
+              Work
+            </summary>
+            <div class="row probootstrap-animate">
               <div class="col-sm-12 col-md-4 col-lg-3">
                 <img src="assets/img/ng-logo.png" class="es-experience-detail-img rounded-circle img-fluid mx-auto d-block">
               </div>
-              <div class="col-sm-12 col-md-8 col-lg-9 es-experience-detail-text">
+              <div class="col-sm-12 col-md-8 col-lg-9">
                 <div class="es-experience-detail-text-header">
                   <span class="es-experience-detail-text-position">Systems Engineer Intern</span>
                   <br/>
@@ -118,19 +93,19 @@
                   June 2018 - August 2018
                 </div>
                 <hr/>
-                <ul>
+                <ul class="es-experience-detail-text">
                   <li>
-                    Supported IRAD team in front-end development for a service platform using Angular, HTML, Bootstrap, etc. with continuous integration
+                    Supported IRAD team in Agile front-end development for a service platform using Angular, HTML, Bootstrap, etc. with continuous integration
                   </li>
                   <li>
                     Developed Arduino prototype to demonstrate the capabilities of an efficient data entry solution and suggest potential pitfalls and improvements for the device to the product owner
                   </li>
-                  <li>
+                  <!-- <li>
                     Followed Agile methodology in planning and development for all technical projects
-                  </li>
+                  </li> -->
                   <li>
                     Assisted in the development and implementation of a system for maintainable and effective internal business practices
-                    <ul>
+                    <!-- <ul>
                       <li>
                         Created white paper describing best practices for the system
                       </li>
@@ -140,34 +115,29 @@
                       <li>
                         Worked with internal SharePoint designers to create a central repository for documents; developed how-to guides for repository usage; communicated changes and updates between site designers and management
                       </li>
-                    </ul>
+                    </ul> -->
                   </li>
                   <li>
                     Developed and presented winning solution with a team of interns in a national competition to create an internal website connecting interns looking for work with managers
-                    <ul>
+                    <!-- <ul>
                       <li>
                         Presented to business management and HR teams
                       </li>
                       <li>
                         Primarily developed the front-end (HTML, Bootstrap, CSS) and fetched data from SharePoint with JS queries
                       </li>
-                    </ul>
+                    </ul> -->
                   </li>
-                  <li>
+                  <!-- <li>
                     Created PDF-parsing script in Python to process Contractor Performance Assessment Reporting System documents; used by contracts managers
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-
-        <!-- axalta -->
-        <div class="jumbotron-fluid">
-          <div class="es-experience-container">
-            <div class="row es-experience-detail-container">
+            <hr/>
+            <div class="row probootstrap-animate">
               <div class="col-sm-12 col-md-4 col-lg-3">
-                <img src="assets/img/axalta-logo.jpg" class="es-experience-detail-img rounded-circle img-fluid mx-auto d-block">
+                <img src="assets/img/axalta-logo.jpg" class="es-experience-detail-img img-fluid mx-auto d-block">
               </div>
               <div class="col-sm-12 col-md-8 col-lg-9 es-experience-detail-text">
                 <div class="es-experience-detail-text-header">
@@ -180,7 +150,7 @@
                   May 2017 - August 2017
                 </div>
                 <hr/>
-                <ul>
+                <ul class="es-experience-detail-text">
                   <li>
                     Restructured Axalta’s Public Key Infrastructure to increase network security
                     <ul>
@@ -201,13 +171,8 @@
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-        
-        <!-- umich research -->
-        <div class="jumbotron-fluid">
-          <div class="es-experience-container">
-            <div class="row es-experience-detail-container">
+            <hr/>
+            <div class="row">
               <div class="col-sm-12 col-md-4 col-lg-3">
                 <img src="assets/img/umich-eecs-logo.png" class="es-experience-detail-img rounded-circle img-fluid mx-auto d-block">
               </div>
@@ -222,7 +187,7 @@
                   October 2015 - April 2017
                 </div>
                 <hr/>
-                <ul>
+                <ul class="es-experience-detail-text">
                   <li>
                     Tested compressive sensing/machine learning integrated circuit (IC)
                     <ul>
@@ -248,93 +213,51 @@
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <button class="es-experience-collapsible">Projects</button>
-      <div class="es-experience-collapsible-content">
-        <!-- EECS 473 -->
-        <div class="jumbotron-fluid">
-          <div class="es-experience-container">
+            <hr/>
+          </details>
+          <details class="probootstrap-animate">
+            <summary class="ey-experiences-summary">
+              Projects
+            </summary>
             <div class="row">
-              <div class="col-sm-12 col-md-4 col-lg-3">
-                <img src="assets/img/metronome-render.png" class="es-experience-met-img img-fluid mx-auto d-block">
-              </div>
-              <div class="col-sm-12 col-md-8 col-lg-9 es-experience-detail-text">
-                <div class="es-experience-detail-text-header">
-                  <span class="es-experience-detail-text-position">Metronome</span>
-                  <br/>
-                  EECS 473: Advanced Embedded Systems
-                  <br/>
-                  Fall 2017
-                </div>
-                <hr/>
-                My senior design project was an embedded systems course. The requirements for the project were fairly open ended - utilize the topics in the course, and create something that has real-world value. My senior design team had five people, and we chose to build a "high-tech" metronome that used FreeRTOS (so it had incredibly good timing accuracy), could visualize up to 21 different subdivisions and set different tones for each subdivision, could overlay two different count patterns (e.g. 5 beats per measure + 8 beats per measure), and had a custom-designed PCB to support buttons, an LCD screen, a speaker, a headphone jack, and a battery.
-                <br/><br/>
-                My main contributions were in developing the firmware and user interface for the display. This involved writing the code that would draw images onto the screen (and double buffering for smooth graphics!) and designing the logic for what would display based on user inputs. We used the  STM32F74 microcontroller, which provided some APIs and was useful for the setup and use of the full-color LCD screen that we had chosen. 
-                <br/><br/>
-                Our professor, in the comments on our final project, said, "The project was one of the most complex designs ever in the course. The board was complex with a dense processor and you all did everything 'the right way'."
-                <br/><br/>
-                <a href="assets/pdf/eecs473-poster.pdf" target="_blank">Click here to view our presentation from the Engineering Design Expo.</a>
-              </div>
+              coming soon!
             </div>
-          </div>
-        </div>
-        <!-- EECS 373 -->
-        <div class="jumbotron-fluid">
-          <div class="es-experience-container">
-            <div class="row">
-              <div class="col-sm-12 col-md-4 col-lg-3">
-                <img src="assets/img/rob-arm-1.jpg" class="es-experience-rob-arm-img img-fluid mx-auto d-block">         
-              </div>
-              <div class="col-sm-12 col-md-8 col-lg-9 es-experience-detail-text">
-                <div class="es-experience-detail-text-header">
-                  <span class="es-experience-detail-text-position">Mobile Robotic Arm</span>
-                  <br/>
-                  EECS 373: Intro to Embedded Systems
-                  <br/>
-                  Fall 2016
-                </div>
-                <hr/>
-                This was the first "real" embedded systems project that I had ever done. I worked on a team with two others, and looking back, we probably bit off more than we could chew - but we had a lot of fun doing it! 
-                <br/><br/>
-                We built a robotic arm + claw that could be raised, lowered, opened, and closed by using a flex sensor attached to a glove. The arm itself was mounted on a mobile base that could be controlled with an XBox controller. Both the glove and the controller had XBee modules that sent signals to the arm. The code was written mainly in Verilog for the Actel SmartFusion microcontroller.
-                <br/><br/>
-                <a href="assets/pdf/eecs373-poster.pdf" target="_blank">Click here to view our presentation from the EECS 373 Design Expo.</a>
-              </div>
-            </div>
-          </div>
+          </details>
         </div>
       </div>
     </div>
-    <!-- END EXPERIENCE -->
 
-    <!-- START CONTACT -->
-    <div class="es-app-wrapper">
-      <div class="es-app-title">
-        <a name="contact">CONTACT</a>
-      </div>
-      
-      <div class="row d-flex flex-sm-column flex-md-row justify-content-center align-items-center">
-        <div class="col d-flex flex-column justify-content-center align-items-center">
-          <img src="assets/img/gmail-icon.png" class="es-contact-link-icon img-rounded img-fluid mx-auto d-block" alt="gmail icon" id="gmail-icon">
-          <p>eeyan14@gmail.com</p>
+    <!-- <section class="probootstrap-section probootstrap-section-colored-darker" data-section="registry"> -->
+      <section class="probootstrap-section probootstrap-border-top" data-section="contact">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12 probootstrap-animate"><h2 class="mt0">Contact</h2></div>
+        </div>
+        <div class="row" align="center">
+          <div class="col-sm-6 col-xs-12 probootstrap-animate">
+            <a href="https://www.linkedin.com/in/esther-yan/" class="btn-register" target="_blank"><img src="assets/img/linkedin-icon-xs.png" alt="linkedin icon" class="img-responsive"></a>
+          </div>
+          <div class="col-sm-6 col-xs-12 probootstrap-animate">
+            <a href="mailto:eeyan14@gmail.com" class="btn-register" target="_blank"><img src="assets/img/gmail-icon-xs.png" alt="gmail icon" class="img-responsive"></a>
+          </div>
         </div>
       </div>
-      <div class="row d-flex flex-sm-column flex-md-row justify-content-center align-items-center">
-        <div class="col d-flex flex-column justify-content-center align-items-center">
-          <a href="https://www.linkedin.com/in/esther-yan/" target="_blank">
-            <img src="assets/img/linkedin-icon.png" class="es-contact-link-icon img-rounded img-fluid mx-auto d-block" alt="linkedin icon" id="linkedin-icon">
-            <p>linkedin.com/in/esther-yan</p>
-          </a>
+    </section>
+
+    <footer class="probootstrap-footer">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            Modified template from &copy; 2017 <a href="https://uicookies.com/">uiCookies</a>.
+          </div>
         </div>
       </div>
-    </div>
-    <!-- END CONTACT -->
+    </footer>
+
+
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/custom.js"></script>
 
   </body>
-
-  <!-- Page-specific JS -->
-  <script src="index.js"></script>
 </html>
