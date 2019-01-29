@@ -1033,6 +1033,7 @@ a:hover, a:focus, a:active {
 .es-experience-detail-text {
   text-align: left;
   font-size: 11pt;
+  margin-right: 20px;
 }
 
 .es-experience-detail-text-bullet {
