@@ -949,6 +949,7 @@ a:hover, a:focus, a:active {
   -webkit-transition: .3s all ease-out;
   transition: .3s all ease-out;
   top: 0px;
+  margin-top: 20px;
 }
 
 .btn-contact:hover img, .btn-contact:focus img {
@@ -1012,6 +1013,10 @@ a:hover, a:focus, a:active {
   font-weight: 300;
 }
 
+.es-gen-text {
+  margin: 30px 20px;
+}
+
 .ey-experiences-summary {
   font-family: "Zilla Slab", serif;
   font-size: 26pt;
@@ -1071,6 +1076,40 @@ a:hover, a:focus, a:active {
   font-size: 20px;
 }
 
+.es-misc-section {
+  padding: 4em 0;
+  min-height: 350px;
+  text-align: center;
+  background: url("./assets/img/greenies-bow.jpg") no-repeat fixed center top / cover;
+  position: relative;
+  z-index: 4;
+}
+
+.es-misc-overlay {
+  padding: none;
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 6;
+}
+
+.es-misc-content {
+  position: relative;
+  z-index: 20;
+}
+
+.es-misc-text {
+  /*position: relative;*/
+  margin: 30px 20px;
+  color: #505050;
+  /*z-index: 20;*/
+}
 
 .probootstrap-section.probootstrap-section-colored-darker p, .ey-registry-experiences-description p {
   color: white;
