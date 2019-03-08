@@ -598,7 +598,7 @@ a:hover, a:focus, a:active {
   padding: 4em 0;
   min-height: 350px;
   text-align: center;
-  background: url("./assets/img/greenies-bow.jpg") no-repeat fixed center top / cover;
+  background: url("../assets/img/greenies-bow.jpg") no-repeat fixed center top / cover;
   position: relative;
   z-index: 4;
 }

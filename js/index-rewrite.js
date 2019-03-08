@@ -1,5 +1,5 @@
 (function() {
-  var $animate_element = $('.animate');
+  var $animate_scroll_element = $('.animate-scroll');
   var $window = $(window);
 
   $window.on('scroll resize', check_if_in_view);
@@ -10,7 +10,7 @@
     var window_top_position = $window.scrollTop();
     var window_bottom_position = (window_top_position + window_height);
 
-    $.each($animate_element, function() {
+    $.each($animate_scroll_element, function() {
       var $element = $(this);
       var element_height = $element.outerHeight();
       var element_top_position = $element.offset().top;
@@ -21,9 +21,9 @@
           (element_top_position <= window_bottom_position)) {
         $element.addClass('in-view fade-in');
       }
-      // else {
-      //   $element.removeClass('in-view fade-in');
-      // }
+      else {
+        $element.removeClass('in-view fade-in');
+      }
     });
   }
 
