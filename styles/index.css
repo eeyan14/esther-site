@@ -7,12 +7,14 @@
   --font-size-p-xs: 0.85rem;
   --light-green: #9BB597;
   --dark-green: #7C9078;
+  --light-gray: #DCDCDC;
   --dark-gray: #505050;
+  --navbar-height: 3rem;
 }
 
 body {
   font-family: "Alice", serif;
-  margin: 0;
+  margin: var(--navbar-height) 0 0;
   padding: 0;
 }
 
@@ -35,6 +37,66 @@ p {
 
 a { text-decoration: none; }
 
+/*************************
+ ***** NAVBAR/BANNER *****
+ *************************/
+#navbar {
+  display: flex;
+  height: var(--navbar-height);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  background-color: var(--dark-green);
+  opacity: 1;
+  z-index: 10;
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75);
+}
+
+.navbar-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  justify-content: flex-start;
+  padding-left: 1rem;
+}
+
+a.home-link {
+  font-family: 'Mr De Haviland', cursive;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--light-gray);
+  margin: 0 1rem;
+}
+
+.navbar-right {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+a.page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  text-align: center;
+  color: var(--light-gray);
+  text-decoration: none;
+  font-family: "Zilla Slab", serif;
+  font-weight: normal;
+  transition: all ease 0.3s;
+}
+
+a.page-link:hover, a.page-link:active, a.page-link:focus, a.home-link:hover, a.home-link:active, a.home-link:focus {
+  color: white;
+  font-weight: bold;
+}
+
 .banner {
   display: flex;
   justify-content: center;
@@ -42,9 +104,11 @@ a { text-decoration: none; }
   height: 60vh;
   background: var(--light-green) url("../assets/img/lace-background-transparent.png") no-repeat center bottom / cover;
   position: relative;
-  /*z-index: 4;*/
 }
 
+/*************************
+ ******** SECTION ********
+ *************************/
 .section {
   display: flex;
   flex-direction: column;
@@ -81,7 +145,7 @@ a { text-decoration: none; }
   width: 40%;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin: -5rem 0 2rem;
 }
 
 .profile-image img {
@@ -89,6 +153,7 @@ a { text-decoration: none; }
   max-height: 20rem;
   margin: 0;
   border-radius: 50%;
+  border: 10px solid white;
 }
 
 /*************************

@@ -27,4 +27,16 @@
     });
   }
 
+  var prev_scroll_pos = window.pageYOffset;
+  window.onscroll = function() {
+    var current_scroll_pos = window.pageYOffset;
+    if (prev_scroll_pos > current_scroll_pos) {
+      document.getElementById("navbar").style.top = "0";
+    }
+    else {
+      document.getElementById("navbar").style.top = "-4rem";
+    }
+    prev_scroll_pos = current_scroll_pos;
+  }
+
 })()
