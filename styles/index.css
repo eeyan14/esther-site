@@ -70,6 +70,8 @@ a.home-link {
   text-decoration: none;
   color: var(--light-gray);
   margin: 0 1rem;
+  font-weight: normal;
+  transition: all ease 0.3s;
 }
 
 .navbar-right {
